@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Job Listing</title>
+    <link rel="stylesheet" href="./main.css">
+    <!-- <script src="https://kit.fontawesome.com/f75c195dd0.js" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        grey: "#ECECEC",
+                        heading: "#272727",
+                        lightgreen: "#EAF2E0",
+                        primary: '#72B261',
+                        secondary: '#FFFFFF',
+                        tertiary: '#2F3E48',
+                        quarternary: "#B3B0B5"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main class="bg-grey container-xl place-items-center grid p-10 font-bold">
+        <h1 class="font-bold text-4xl text-heading">Latest Job Listing</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+            <div class="card bg-secondary shadow-md inline-block p-5 rounded-md w-full">
+                <div class="flex flex-row items-center justify-center bg-lightgreen rounded-full w-[156px] p-2">
+                    <img class="h-3.5 w-auto" src="https://i.ibb.co/F4Y8mtC/icons8-approval-26.png"
+                        alt="check-badge.png">
+                    <p class="font-light ml-2 text-xs">Verified Company</p>
+                </div>
+
+                <div class="flex flex-row items-center">
+                    <img class="object-contain h-[112px]"
+                        src="https://i.ibb.co/KwKHs3N/travel-agency-logo-maker-1281.png" alt="travel agency.png">
+                    <div class="flex flex-col ml-2">
+                        <span class="text-sm font-normal text-quarternary">Bandung, Indonesia</span>
+                        <h2 class="text-xl text-tertiary">Travel Agency</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="mt-5">
+                    <h2 class="font-normal text-tertiary text-2xl">Android Developer</h2>
+                    <p class="mt-5 text-sm text-quarternary font-normal">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing
+                        elit. Quae
+                        quasi dolor officiis repellendus
+                        est
+                        placeat culpa tenetur delectus quaerat maiores amet iusto perspiciatis ab, deleniti impedit?
+                        Vitae
+                        amet corrupti et.</p>
+                    <div class="mt-8 flex flex-row justify-between">
+                        <div class="flex flex-col">
+                            <div class="flex flex-row items-center mb-2">
+                                <img class="h-5 object-contain mr-3"
+                                    src="https://i.ibb.co/cYZwDtv/icons8-briefcase-settings-64.png" alt="fulltime.png">
+
+                                <span class="font-medium text-sm text-quarternary">Full Time</span>
+                            </div>
+                            <div class="flex flex-row items-center">
+                                <img class="h-5 object-contain mr-3" src="https://i.ibb.co/6D5qf1q/icons8-money-30.png"
+                                    alt="money.png">
+                                <span class="font-medium text-sm text-quarternary">$20k - $25k</span>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <button
+                                class="btn bg-primary text-xs text-white text-center w-[145px] tracking-[1px] p-3 rounded-md">APPLY
+                                NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-secondary shadow-md inline-block p-5 rounded-md w-full">
+                <div class="flex flex-row items-center justify-center bg-lightgreen rounded-full w-[156px] p-2">
+                    <img class="h-3.5 w-auto" src="https://i.ibb.co/F4Y8mtC/icons8-approval-26.png"
+                        alt="check-badge.png">
+                    <p class="font-light ml-2 text-xs">Verified Company</p>
+                </div>
+
+                <div class="flex flex-row items-center">
+                    <img class="object-contain h-[112px]"
+                        src="https://www.dlf.pt/png/big/15/154733_your-company-logo-png.png" alt="unlimited.png">
+                    <div class="flex flex-col ml-2">
+                        <span class="text-sm font-normal text-quarternary">Melbourne, Sydney</span>
+                        <h2 class="text-xl text-tertiary">Unlimited</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="mt-5">
+                    <h2 class="font-normal text-tertiary text-2xl">Entrepreneur</h2>
+                    <p class="mt-5 text-sm text-quarternary font-normal">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing
+                        elit. Quae
+                        quasi dolor officiis repellendus
+                        est
+                        placeat culpa tenetur delectus quaerat maiores amet iusto perspiciatis ab, deleniti impedit?
+                        Vitae
+                        amet corrupti et.</p>
+                    <div class="mt-8 flex flex-row justify-between pt-5;">
+                        <div class="flex flex-col">
+                            <div class="flex flex-row items-center mb-2">
+                                <img class="h-5 object-contain mr-3"
+                                    src="https://i.ibb.co/cYZwDtv/icons8-briefcase-settings-64.png" alt="fulltime.png">
+
+                                <span class="font-medium text-sm text-quarternary">Full Time</span>
+                            </div>
+                            <div class="flex flex-row items-center">
+                                <img class="h-5 object-contain mr-3" src="https://i.ibb.co/6D5qf1q/icons8-money-30.png"
+                                    alt="money.png">
+                                <span class="font-medium text-sm text-quarternary">$20k - $25k</span>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <button
+                                class="btn bg-primary text-xs text-white text-center w-[145px] tracking-[1px] p-3 rounded-md">APPLY
+                                NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-secondary shadow-md inline-block p-5 rounded-md w-full">
+                <div class="flex flex-row items-center justify-center bg-lightgreen rounded-full w-[156px] p-2">
+                    <img class="h-3.5 w-auto" src="https://i.ibb.co/F4Y8mtC/icons8-approval-26.png"
+                        alt="check-badge.png">
+                    <p class="font-light ml-2 text-xs">Verified Company</p>
+                </div>
+
+                <div class="flex flex-row items-center">
+                    <img class="object-contain h-[112px]"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/379f2868092131.5b509a8c5f738.png"
+                        alt="Nexomedia.png">
+                    <div class="flex flex-col ml-2">
+                        <span class="text-sm font-normal text-quarternary">Riyadh, Saudi</span>
+                        <h2 class="text-xl text-tertiary">Nexomedia</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="mt-5">
+                    <h2 class="font-normal text-tertiary text-2xl">Backend Developer</h2>
+                    <p class="mt-5 text-sm text-quarternary font-normal">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing
+                        elit. Quae
+                        quasi dolor officiis repellendus
+                        est
+                        placeat culpa tenetur delectus quaerat maiores amet iusto perspiciatis ab, deleniti impedit?
+                        Vitae
+                        amet corrupti et.</p>
+                    <div class="mt-8 flex flex-row justify-between pt-5;">
+                        <div class="flex flex-col">
+                            <div class="flex flex-row items-center mb-2">
+                                <img class="h-5 object-contain mr-3"
+                                    src="https://i.ibb.co/cYZwDtv/icons8-briefcase-settings-64.png" alt="fulltime.png">
+
+                                <span class="font-medium text-sm text-quarternary">Full Time</span>
+                            </div>
+                            <div class="flex flex-row items-center">
+                                <img class="h-5 object-contain mr-3" src="https://i.ibb.co/6D5qf1q/icons8-money-30.png"
+                                    alt="money.png">
+                                <span class="font-medium text-sm text-quarternary">$20k - $25k</span>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <button
+                                class="btn bg-primary text-xs text-white text-center w-[145px] tracking-[1px] p-3 rounded-md">APPLY
+                                NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-secondary shadow-md inline-block p-5 rounded-md w-full">
+                <div class="flex flex-row items-center justify-center bg-lightgreen rounded-full w-[156px] p-2">
+                    <img class="h-3.5 w-auto" src="https://i.ibb.co/F4Y8mtC/icons8-approval-26.png"
+                        alt="check-badge.png">
+                    <p class="font-light ml-2 text-xs">Verified Company</p>
+                </div>
+
+                <div class="my-3 flex flex-row items-center">
+                    <img class="object-contain h-[75px]"
+                        src="https://seeklogo.com/images/T/triangle-shape-company-logo-1340EA101E-seeklogo.com.png"
+                        alt="lipsum.png">
+                    <div class="flex flex-col ml-4">
+                        <span class="text-sm font-normal text-quarternary">Macao, China</span>
+                        <h2 class="text-xl text-tertiary">Lipsum</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="mt-5">
+                    <h2 class="font-normal text-tertiary text-2xl">Frontend Developer</h2>
+                    <p class="mt-5 text-sm text-quarternary font-normal">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing
+                        elit. Quae
+                        quasi dolor officiis repellendus
+                        est
+                        placeat culpa tenetur delectus quaerat maiores amet iusto perspiciatis ab, deleniti impedit?
+                        Vitae
+                        amet corrupti et.</p>
+                    <div class="mt-8 flex flex-row justify-between pt-5;">
+                        <div class="flex flex-col">
+                            <div class="flex flex-row items-center mb-2">
+                                <img class="h-5 object-contain mr-3"
+                                    src="https://i.ibb.co/cYZwDtv/icons8-briefcase-settings-64.png" alt="fulltime.png">
+
+                                <span class="font-medium text-sm text-quarternary">Full Time</span>
+                            </div>
+                            <div class="flex flex-row items-center">
+                                <img class="h-5 object-contain mr-3" src="https://i.ibb.co/6D5qf1q/icons8-money-30.png"
+                                    alt="money.png">
+                                <span class="font-medium text-sm text-quarternary">$20k - $25k</span>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <button
+                                class="btn bg-primary text-xs text-white text-center w-[145px] tracking-[1px] p-3 rounded-md">APPLY
+                                NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-secondary shadow-md inline-block p-5 rounded-md w-full">
+                <div class="flex flex-row items-center justify-center bg-lightgreen rounded-full w-[156px] p-2">
+                    <img class="h-3.5 w-auto" src="https://i.ibb.co/F4Y8mtC/icons8-approval-26.png"
+                        alt="check-badge.png">
+                    <p class="font-light ml-2 text-xs">Verified Company</p>
+                </div>
+
+                <div class="flex flex-row items-center">
+                    <img class="object-contain h-[112px]"
+                        src="https://cdn.freebiesupply.com/logos/large/2x/huff-construction-company-logo-png-transparent.png"
+                        alt="huff.png">
+                    <div class="flex flex-col ml-4">
+                        <span class="text-sm font-normal text-quarternary">Makati, Philippines</span>
+                        <h2 class="text-xl text-tertiary">Huff</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="mt-5">
+                    <h2 class="font-normal text-tertiary text-2xl">Construction Worker</h2>
+                    <p class="mt-5 text-sm text-quarternary font-normal">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing
+                        elit. Quae
+                        quasi dolor officiis repellendus
+                        est
+                        placeat culpa tenetur delectus quaerat maiores amet iusto perspiciatis ab, deleniti impedit?
+                        Vitae
+                        amet corrupti et.</p>
+                    <div class="mt-8 flex flex-row justify-between pt-5;">
+                        <div class="flex flex-col">
+                            <div class="flex flex-row items-center mb-2">
+                                <img class="h-5 object-contain mr-3"
+                                    src="https://i.ibb.co/cYZwDtv/icons8-briefcase-settings-64.png" alt="fulltime.png">
+
+                                <span class="font-medium text-sm text-quarternary">Full Time</span>
+                            </div>
+                            <div class="flex flex-row items-center">
+                                <img class="h-5 object-contain mr-3" src="https://i.ibb.co/6D5qf1q/icons8-money-30.png"
+                                    alt="money.png">
+                                <span class="font-medium text-sm text-quarternary">$20k - $25k</span>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <button
+                                class="btn bg-primary text-xs text-white text-center w-[145px] tracking-[1px] p-3 rounded-md">APPLY
+                                NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-secondary shadow-md inline-block p-5 rounded-md w-full">
+                <div class="flex flex-row items-center justify-center bg-lightgreen rounded-full w-[156px] p-2">
+                    <img class="h-3.5 w-auto" src="https://i.ibb.co/F4Y8mtC/icons8-approval-26.png"
+                        alt="check-badge.png">
+                    <p class="font-light ml-2 text-xs">Verified Company</p>
+                </div>
+
+                <div class="my-3 flex flex-row items-center">
+                    <img class="object-contain h-[75px]"
+                        src="https://th.bing.com/th/id/R.e37ad0fcb3cc5fe6a5324b83792ce6ff?rik=0mvbvGjFJJPWBA&riu=http%3a%2f%2f4.bp.blogspot.com%2f_22VzX2Bd_os%2fTGH8QR43clI%2fAAAAAAAAALg%2fSw06t_aoz54%2fw1200-h630-p-k-no-nu%2fNoodles%2band%2bCompany%2bLogo%2b-%2bCopy.png&ehk=KgSU5%2b0%2fTWkEK9ohZ%2bl87GoLdrfZ8z8yolwbZ6ibaNM%3d&risl=&pid=ImgRaw&r=0"
+                        alt="noodlescompany.png">
+                    <div class="flex flex-col ml-4">
+                        <span class="text-sm font-normal text-quarternary">Slovenia,Russia</span>
+                        <h2 class="text-xl text-tertiary">Noodles</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="mt-5">
+                    <h2 class="font-normal text-tertiary text-2xl">Chef</h2>
+                    <p class="mt-5 text-sm text-quarternary font-normal">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing
+                        elit. Quae
+                        quasi dolor officiis repellendus
+                        est
+                        placeat culpa tenetur delectus quaerat maiores amet iusto perspiciatis ab, deleniti impedit?
+                        Vitae
+                        amet corrupti et.</p>
+                    <div class="mt-8 flex flex-row justify-between pt-5;">
+                        <div class="flex flex-col">
+                            <div class="flex flex-row items-center mb-2">
+                                <img class="h-5 object-contain mr-3"
+                                    src="https://i.ibb.co/cYZwDtv/icons8-briefcase-settings-64.png" alt="fulltime.png">
+
+                                <span class="font-medium text-sm text-quarternary">Full Time</span>
+                            </div>
+                            <div class="flex flex-row items-center">
+                                <img class="h-5 object-contain mr-3" src="https://i.ibb.co/6D5qf1q/icons8-money-30.png"
+                                    alt="money.png">
+                                <span class="font-medium text-sm text-quarternary">$20k - $25k</span>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <button
+                                class="btn bg-primary text-xs text-white text-center w-[145px] tracking-[1px] p-3 rounded-md">APPLY
+                                NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

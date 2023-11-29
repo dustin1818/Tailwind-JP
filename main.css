@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn:hover {
+  animation: goUp 0.4s ease;
+}
+
+@keyframes goUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-25%);
+  }
+}
